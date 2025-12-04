@@ -17,16 +17,25 @@ const Index = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <div className="mb-8 animate-fade-in">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight tracking-tight">
-            <span className="inline-block animate-glow text-primary">🔥</span>{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-              Ты учишь.
-            </span>
-            <br />
-            <span className="text-foreground">Мы продаём.</span>
-          </h1>
+      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <div className="mb-12 animate-fade-in flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="flex-shrink-0">
+            <img 
+              src="https://drive.usercontent.google.com/uc?id=1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5&export=download" 
+              alt="Эксперт" 
+              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary shadow-2xl shadow-primary/50"
+            />
+          </div>
+          <div className="text-left">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight">
+              <span className="inline-block animate-glow text-primary">🔥</span>{" "}
+              <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                Ты учишь.
+              </span>
+              <br />
+              <span className="text-foreground">Мы продаём.</span>
+            </h1>
+          </div>
         </div>
 
         <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
