@@ -237,6 +237,46 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 md:mb-16 animate-fade-in">
+            <span className="text-foreground">Другие пакеты</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto mb-12 md:mb-16">
+            <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-card/40 to-card/20 backdrop-blur-sm border border-muted/30 hover:border-muted/50 transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg opacity-60">
+              <div className="text-4xl mb-4">⭐️</div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">Пакет 1 — «Пробная доставка»</h3>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-4">1 рилс</p>
+              <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                5 000 ₽
+              </p>
+            </div>
+
+            <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-card/40 to-card/20 backdrop-blur-sm border border-muted/30 hover:border-muted/50 transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg opacity-60" style={{ animationDelay: '0.1s' }}>
+              <div className="text-4xl mb-4">⭐️</div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">Пакет 2 — «Запуск для мастера»</h3>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-4">10 рилсов</p>
+              <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                40 000 ₽
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto text-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary/20 to-destructive/20 backdrop-blur-sm border-2 border-primary/40 shadow-2xl shadow-primary/30">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-relaxed">
+                Но если ты хочешь{" "}
+                <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
+                  продажи обучения
+                </span>
+                {" "}— тебе нужен пакет №3.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
