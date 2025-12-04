@@ -1,11 +1,45 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted opacity-80"></div>
+      
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        <div className="mb-8 animate-fade-in">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight tracking-tight">
+            <span className="inline-block animate-glow text-primary">🔥</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+              Ты учишь.
+            </span>
+            <br />
+            <span className="text-foreground">Мы продаём.</span>
+          </h1>
+        </div>
+
+        <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          Полный запуск твоего обучения без съёмок, без оборудования, без вовлечения.
+        </p>
+
+        <div className="flex flex-col items-center gap-4 animate-scale-in" style={{ animationDelay: '0.4s' }}>
+          <Button 
+            size="lg" 
+            className="text-xl md:text-2xl px-12 py-8 bg-gradient-to-r from-primary to-destructive hover:from-destructive hover:to-primary transition-all duration-300 shadow-2xl hover:shadow-primary/50 hover:scale-105"
+          >
+            🚀 Хочу запуск
+          </Button>
+          
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-secondary">10 мест.</span> После заполнения — вход закрыт.
+          </p>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
       </div>
     </div>
   );
