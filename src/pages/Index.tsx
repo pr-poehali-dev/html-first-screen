@@ -98,6 +98,50 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 md:mb-8 animate-fade-in">
+            <span className="text-foreground">Мы не делаем «красиво».</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+              Мы делаем, чтобы покупали.
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mt-12 md:mt-16">
+            {[
+              { text: "Настройка Директа" },
+              { text: "Бот для заявок" },
+              { text: "Запуск Telegram канала" },
+              { text: "Контент для Telegram под личный бренд" },
+              { text: "Кодовые слова в аккаунте" },
+              { text: "Полное погружение в твоё обучение" }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg hover:shadow-xl hover:shadow-primary/20"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="Check" size={20} className="text-primary" />
+                </div>
+                <p className="text-lg md:text-xl font-medium text-foreground pt-0.5">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 md:mt-20 text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="inline-block p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm border-2 border-primary/40 shadow-2xl shadow-primary/30">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
+                <span className="text-4xl md:text-5xl">💥</span> У тебя появляется система, которая приводит{" "}
+                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  заявки и продажи.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
