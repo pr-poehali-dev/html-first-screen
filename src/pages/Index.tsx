@@ -24,7 +24,8 @@ const Index = () => {
               <img 
                 src="https://lh3.googleusercontent.com/d/1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5" 
                 alt="Эксперт" 
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: '50% 25%' }}
                 crossOrigin="anonymous"
               />
             </div>
