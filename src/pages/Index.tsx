@@ -210,6 +210,33 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="mb-12 md:mb-16 animate-fade-in">
+              <div className="inline-block p-12 md:p-16 rounded-full bg-gradient-to-br from-primary/20 to-destructive/20 backdrop-blur-sm border-4 border-primary/40 shadow-2xl shadow-primary/50 mb-8">
+                <p className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black bg-gradient-to-r from-primary via-secondary to-destructive bg-clip-text text-transparent">
+                  75 000 ₽
+                </p>
+              </div>
+            </div>
+
+            <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
+              <Button 
+                size="lg" 
+                className="text-2xl md:text-3xl px-12 md:px-16 py-10 md:py-12 bg-gradient-to-r from-destructive to-primary hover:from-primary hover:to-destructive transition-all duration-500 shadow-2xl hover:shadow-destructive/50 hover:scale-110 w-full sm:w-auto font-bold"
+              >
+                🔥 Забронировать место
+              </Button>
+              
+              <p className="text-sm md:text-base text-muted-foreground mt-6">
+                <span className="font-semibold text-destructive">Осталось 10 мест.</span> После заполнения — вход закрыт.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
