@@ -19,6 +19,16 @@ const Index = () => {
 
       <div className="relative z-10 px-4 sm:px-6 max-w-7xl mx-auto w-full">
         <div className="mb-8 md:mb-12 animate-fade-in flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+          <div className="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
+            <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/50">
+              <img 
+                src="https://lh3.googleusercontent.com/d/1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5" 
+                alt="Эксперт" 
+                className="w-full h-full object-cover object-top"
+                crossOrigin="anonymous"
+              />
+            </div>
+          </div>
           <div className="text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 leading-tight tracking-tight">
               <span className="inline-block animate-glow text-primary">🔥</span>{" "}
@@ -28,16 +38,6 @@ const Index = () => {
               <br />
               <span className="text-foreground">Мы продаём.</span>
             </h1>
-          </div>
-          <div className="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
-            <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/50">
-              <img 
-                src="https://lh3.googleusercontent.com/d/1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5" 
-                alt="Эксперт" 
-                className="w-full h-full object-cover"
-                crossOrigin="anonymous"
-              />
-            </div>
           </div>
         </div>
 
