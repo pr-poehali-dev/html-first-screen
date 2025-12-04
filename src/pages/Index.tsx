@@ -168,6 +168,48 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 md:mb-16 animate-fade-in">
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+              Условия
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-12 md:mb-16">
+            {[
+              { text: "Можно запускать из любой страны" },
+              { text: "Рассрочка — для РФ" },
+              { text: "Если банк откажет — найдём решение" },
+              { text: "Места ограничены — всего 10" }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg hover:shadow-xl hover:shadow-primary/20"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="Check" size={20} className="text-primary" />
+                </div>
+                <p className="text-lg md:text-xl font-medium text-foreground pt-0.5">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-secondary/20 to-primary/20 backdrop-blur-sm border-2 border-secondary/40 shadow-2xl shadow-secondary/30">
+              <p className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground text-center leading-relaxed">
+                <span className="inline-block text-3xl md:text-4xl mr-2">⚡</span>
+                <span className="bg-gradient-to-r from-secondary via-primary to-secondary bg-clip-text text-transparent">
+                  Важно:
+                </span>
+                {" "}Покупка = место закреплено. Старт — когда ты готов. Контент можно подготовить заранее.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
