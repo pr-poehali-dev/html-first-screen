@@ -277,6 +277,36 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-8 md:mb-12 animate-fade-in leading-tight">
+              <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                Ты учишь.
+              </span>
+              <br />
+              <span className="text-foreground">Мы продаём.</span>
+            </h2>
+
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-12 md:mb-16 animate-fade-in text-muted-foreground" style={{ animationDelay: '0.2s' }}>
+              Не рилсы. Не лайки.{" "}
+              <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
+                Деньги.
+              </span>
+            </p>
+
+            <div className="animate-scale-in" style={{ animationDelay: '0.4s' }}>
+              <Button 
+                size="lg" 
+                className="text-3xl md:text-4xl px-16 md:px-20 py-12 md:py-14 bg-gradient-to-r from-primary via-destructive to-primary hover:from-destructive hover:via-primary hover:to-destructive transition-all duration-500 shadow-2xl hover:shadow-primary/50 hover:scale-110 w-full sm:w-auto font-black animate-pulse"
+              >
+                🚀 Поехали
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
