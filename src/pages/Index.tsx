@@ -142,6 +142,32 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 animate-fade-in leading-tight">
+                <span className="text-foreground">Если ты — инструктор, и хочешь не «вести блог», а </span>
+                <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
+                  продавать обучение
+                </span>
+                <span className="text-foreground"> — это твой пакет.</span>
+              </h2>
+            </div>
+
+            <div className="order-1 lg:order-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-destructive/30 border-4 border-destructive/40">
+                <img 
+                  src="https://cdn.poehali.dev/files/54195c44-2806-40c6-b9b5-3571e0e8421e.JPG" 
+                  alt="Инструктор" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
