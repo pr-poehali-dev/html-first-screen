@@ -21,9 +21,10 @@ const Index = () => {
         <div className="mb-12 animate-fade-in flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="flex-shrink-0">
             <img 
-              src="https://drive.usercontent.google.com/uc?id=1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5&export=download" 
+              src="https://lh3.googleusercontent.com/d/1yMOdYC3RQhSt6YqnfNmps0pH74pc7hP5" 
               alt="Эксперт" 
               className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-primary shadow-2xl shadow-primary/50"
+              crossOrigin="anonymous"
             />
           </div>
           <div className="text-left">
