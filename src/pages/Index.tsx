@@ -142,23 +142,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
-        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12 md:mb-16">
-              <div className="inline-block text-6xl md:text-7xl mb-6 animate-bounce">🟥</div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in leading-tight">
-                <span className="text-foreground">Если ты — инструктор, и хочешь не «вести блог», а </span>
-                <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
-                  продавать обучение
-                </span>
-                <span className="text-foreground"> — это твой пакет.</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
