@@ -143,39 +143,18 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24 bg-gradient-to-br from-destructive/5 via-background to-background">
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
         <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block mb-8 md:mb-12">
-              <div className="text-6xl md:text-8xl mb-6 animate-pulse">🟥</div>
-            </div>
-            
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 animate-fade-in leading-tight">
-              <span className="text-foreground">Если ты — инструктор, и хочешь не «вести блог», а </span>
-              <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
-                продавать обучение
-              </span>
-              <span className="text-foreground"> — это твой пакет.</span>
-            </h2>
-
-            <div className="grid grid-cols-1 gap-6 md:gap-8 max-w-3xl mx-auto">
-              {[
-                { icon: "Target", text: "Ты эксперт в своей теме, но не знаешь, как упаковать это в продажи" },
-                { icon: "Clock", text: "У тебя нет времени разбираться в контенте, рекламе и воронках" },
-                { icon: "Zap", text: "Ты хочешь запустить обучение быстро и без головной боли" },
-                { icon: "TrendingUp", text: "Ты готов инвестировать в систему, которая работает на результат" }
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="flex items-start gap-6 p-8 rounded-2xl bg-gradient-to-br from-destructive/10 to-card/30 backdrop-blur-sm border-2 border-destructive/30 hover:border-destructive/50 transition-all duration-300 hover:scale-105 animate-fade-in shadow-xl hover:shadow-2xl hover:shadow-destructive/20"
-                  style={{ animationDelay: `${index * 0.15}s` }}
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-destructive/20 flex items-center justify-center">
-                    <Icon name={item.icon} size={24} className="text-destructive" />
-                  </div>
-                  <p className="text-lg md:text-xl font-medium text-foreground text-left pt-2">{item.text}</p>
-                </div>
-              ))}
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <div className="inline-block text-6xl md:text-7xl mb-6 animate-bounce">🟥</div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in leading-tight">
+                <span className="text-foreground">Если ты — инструктор, и хочешь не «вести блог», а </span>
+                <span className="bg-gradient-to-r from-destructive via-primary to-destructive bg-clip-text text-transparent">
+                  продавать обучение
+                </span>
+                <span className="text-foreground"> — это твой пакет.</span>
+              </h2>
             </div>
           </div>
         </div>
