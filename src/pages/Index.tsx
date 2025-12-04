@@ -180,7 +180,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-12 md:mb-16">
             {[
               { text: "Можно запускать из любой страны" },
-              { text: "Рассрочка — для РФ" },
+              { text: "Рассрочка" },
               { text: "Если банк откажет — найдём решение" },
               { text: "Места ограничены — всего 10" }
             ].map((item, index) => (
