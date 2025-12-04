@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden py-8 md:py-12">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
@@ -17,7 +18,8 @@ const Index = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 px-4 sm:px-6 max-w-7xl mx-auto w-full">
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-8 md:py-12">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
         <div className="mb-8 md:mb-12 animate-fade-in flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
           <div className="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary shadow-2xl shadow-primary/50">
@@ -60,7 +62,42 @@ const Index = () => {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-      </div>
+        </div>
+      </section>
+
+      <section className="relative z-10 min-h-screen flex items-center justify-center py-16 md:py-24">
+        <div className="px-4 sm:px-6 max-w-7xl mx-auto w-full">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 md:mb-8 animate-fade-in">
+            <span className="text-foreground">Это не про контент.</span>{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+              Это про продажи.
+            </span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mt-12 md:mt-16">
+            {[
+              { text: "20 продающих рилсов" },
+              { text: "3 карусели" },
+              { text: "2 продающих поста" },
+              { text: "Упаковка оффера" },
+              { text: "Аудит программы обучения" },
+              { text: "Контент-воронка на 90 дней" },
+              { text: "Консультация 60 минут" }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="flex items-start gap-4 p-6 rounded-2xl bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 animate-fade-in shadow-lg hover:shadow-xl hover:shadow-primary/20"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Icon name="Check" size={20} className="text-primary" />
+                </div>
+                <p className="text-lg md:text-xl font-medium text-foreground pt-0.5">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
