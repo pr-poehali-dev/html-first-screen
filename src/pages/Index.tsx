@@ -3,7 +3,14 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted opacity-80"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/1e177fb2-fe55-4c7d-865c-7dec4332edeb/files/2fc7a051-a3fc-49f4-ad50-9ed958d68ba4.jpg)'
+        }}
+      ></div>
+      
+      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/70"></div>
       
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
